@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'testfont';
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
+img {
+    width: 30vw;
+    height: 100vh;
+}
+
+.odin {
+    height: 100px;
+    width: 5vw;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background: rgba(204, 204, 204, 0.5);    
+    color: white;
+    top: 30%;
+    width: 30vw;
+    text-align: center;
+    font-family: 'testfont';
+    font-size: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.credits {
+    position: absolute;
+    bottom: 10px;
+    color:white;
+    width: 30vw;
+    font-size: 15px;
+    text-align: center;
+}
+
+.left-section {
+    position:relative;
+}
