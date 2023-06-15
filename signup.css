@@ -3,8 +3,27 @@
     src: url("Norse-Bold.otf") format("opentype");
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.credits, .card-body, img {
+    width: 40vw;
+}
+
+.top,.middle, .bottom {
+    width: 60vw;
+}
+
 img {
-    width: 30vw;
     height: 100vh;
 }
 
@@ -20,7 +39,6 @@ img {
     background: rgba(204, 204, 204, 0.5);    
     color: white;
     top: 30%;
-    width: 30vw;
     text-align: center;
     font-family: 'testfont';
     font-size: 100px;
@@ -33,11 +51,83 @@ img {
     position: absolute;
     bottom: 10px;
     color:white;
-    width: 30vw;
     font-size: 15px;
     text-align: center;
 }
 
 .left-section {
     position:relative;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.top,.middle,.bottom {
+    padding-left: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.top{
+    background-color: #f9fafb ;
+    font-weight: bold;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-right: 150px ;
+}
+
+.first-row,.second-row,.third-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+input,label {
+    display: block;
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    width: 280px;
+    height: 30px;
+}
+
+.bottom {
+    background-color: #f9fafb;
+    flex: 1 1 auto;
+    padding-top: 5vh;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 35px 10px 35px;
+    font-weight: bold;
+}
+
+.middle {
+    padding-bottom: 20px;
+    box-shadow: 0 5px 5px 4px rgb(0 0 0 / 10%);
+    border: 1px solid #BFBFBF;
+}
+
+.lname,.telly,.cpassy {
+    margin-left: 65px;
+}
+
+button,.login{
+    margin-bottom: 10px;
 }
